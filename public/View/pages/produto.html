@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Três Colunas Bootstrap</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></link>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"></link>
+  <link rel="stylesheet" type="text/css" href="../assets/css/estilo.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/estiloPaginaProdutos.css">
+  <script type="module" src="../../model/mostraProdutos.js"></script>
+</head>
+<body>
+
+  <header>
+
+    <div class="row">
+      <div class="centalizar col-md-4">
+        <a href="/public/index.html"><img src="../assets/img/logo.png"></a>
+      </div>
+    
+    
+      <div class="centalizar col-md-4">
+        <form class="form-inline meio">
+          <input type="text" id="barraDePesquisa" class="form-control mr-sm-2 barra-pesquisa" placeholder="Pesquisar...">
+          <div id="resultadosPesquisa" class="resultadosPesquisa"></div>
+          <div id="resultadoBuscar">
+            <!-- Aqui ficará a sua lista de produtos atual -->
+          </div>
+        </form>
+      </div>
+    
+    
+    
+      <div class="centalizar col-md-4 menu">
+            <div>
+              <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav meio">
+                    <li class="nav-item ">
+                      <a class="nav-link" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../../index.html#quemSomos">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../../index.html#mu-contact">Contato</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="./produto.html">Protudos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./login.html">Entrar</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    </div>
+    </header>
+
+
+
+
+
+<main class="quemSomos">
+<h2 class="tituloDestaque estiloCordegrade pt-5 m-0"> Catalogo de Produtos</h1>
+
+    <div class="container">
+      <div class="row p-5" id="catalogo"></div>
+    
+    </div>
+
+</main>
+
+<footer class='row top-animado'> 
+        
+  <div class='informacoesFooter col-md-4'>
+      <h3 class="tituloDestaque estiloCordegrade text-left pt-0 m-0">Institucional</h3><br />
+      <a href="/" class="m-0 p-0"> <h4 class="estiloCordegrade mb-3 p-0 font-weight-bold"> Sobre </h4> </a>
+      <a href="/" class="m-0 p-0"> <h4 class="estiloCordegrade mb-3 p-0 font-weight-bold"> Produtos </h4> </a>
+
+      <h3 class="tituloDestaque estiloCordegrade text-left pt-0 mb-3 m-0 font-weight-bold">Redes Sociais</h3>
+      <i class="fa-brands estiloCordegrade fa-youtube"></i><a href="/" class="estiloCordegrade font-weight-bold">  Cupcake_oficial</a><br /><br />
+      <i class="fa-brands estiloCordegrade fa-square-instagram"></i><a href="/" class="estiloCordegrade font-weight-bold"> Cupcake_oficial</a><br />
+  </div>
+
+  <div class='contatoFooter col-md-4'>
+      <h3 class="tituloDestaque estiloCordegrade text-left pt-0 m-0">Contato</h3><br />
+      <i class="fa-solid fa-mobile estiloCordegrade"></i> <a class="estiloCordegrade font-weight-bold"> (99) 9999-9999</a><br /><br />
+      <i class="fa-brands fa-square-whatsapp estiloCordegrade"></i> <a class="estiloCordegrade font-weight-bold"> (99) 9999-9999</a><br /><br />
+      <i class="fa-solid fa-envelope estiloCordegrade"></i> <a class="estiloCordegrade font-weight-bold"> CupcakeOficial@Cupcake.com.br</a>
+  </div>
+
+  <div class='enderecoFooter col-md-4'>
+      <h3 class="tituloDestaque estiloCordegrade text-left pt-0 m-0">Enderenço</h3><br />
+      <i class="fa-solid fa-location-dot estiloCordegrade"></i><a class="estiloCordegrade font-weight-bold"> Avenida José Roque norte,450, Vila nastor, 5015, RS  - 99999-999</a><br /> <br />
+      <section id="mu-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3657.611393260836!2d-46.5687728!3d-23.5464755!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e925a91578f%3A0xbb0dccd3570daba0!2sR.%20Itapura%2C%20888%20-%20Vila%20Gomes%20Cardim%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003310-000!5e0!3m2!1spt-BR!2sbr!4v1680897145099!5m2!1spt-BR!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+  </div>
+</footer>
+
+<div class="mu-footer-copyright p-2 quemSomos" style="background-position: center;">
+  <p class="text-center" style="color:#EBEBEB"> Desenvolvido por Carlos Eduardo Matte</p>
+  <p class="text-center" style="color:#EBEBEB">&copy; CNPJ: 99.999.999/9999-99 © Todos os direitos reservados. 2023</p>
+</div> 
+
+
+<div id="mensagem" class="mensagem"></div>
+
+  <!-- Ícone de carrinho -->
+  <h2 onclick="toggleCarrinho()" class="cart-icon"><i class="fas fa-shopping-cart estiloBotao rounded-circle p-3 "></i></h2>
+
+  <!-- Carrinho (inicialmente oculto) -->
+  <div id="carrinho">
+    <div class="close-btn" onclick="toggleCarrinho()">
+      <i class="fas fa-times "></i>
+    </div>
+    <div class="cart-header">
+      <h3 class="estiloCordegrade font-weight-bold">Seu Carrinho</h3>
+    </div>
+    <div class="cart-content">
+      <ul id="itens-carrinho">
+      </ul>
+      <p id="total-carrinho"></p>
+      <a href="./finalizarCompra.html" id="limpar-btn" class="estiloBotao text-center">Finalizar Compra</a>
+      <button id="limpar-btn" class="estiloBotao" onclick="limparCarrinho()">Limpar Carrinho</button>
+    </div>
+  </div>
+  
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../../model/carrinhoDeCompra.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

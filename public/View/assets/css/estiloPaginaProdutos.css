@@ -1,0 +1,109 @@
+    /* Estilização do ícone */
+    .cart-icon {
+        font-size: 24px;
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1001; /* Ajustando o z-index para que o ícone fique acima do carrinho */
+        transition: transform 0.3s ease-in-out, right 0.3s ease-in-out; /* Adicionando transição */
+      }
+  
+      /* Estilização do carrinho */
+      #carrinho {
+        position: fixed;
+        bottom: 0;
+        right: -300px; /* Inicialmente oculto fora da tela */
+        height: 100%;
+        width: 300px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000;
+        overflow-y: auto;
+        padding-top: 50px; /* Espaço para o ícone de fechar */
+      }
+  
+      /* Estilo para exibir o carrinho */
+      #carrinho.open {
+        transform: translateX(-300px); /* Desliza o carrinho para a esquerda */
+      }
+  
+      /* Estilização do botão de fechar */
+      .close-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 15px;
+        cursor: pointer;
+      }
+  
+      /* Estilização do cabeçalho do carrinho */
+      .cart-header {
+        text-align: center;
+        background-color: #f8f9fa;
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+      }
+  
+      /* Estilização do conteúdo do carrinho */
+      .cart-content {
+        padding: 15px;
+      }
+  
+      /* Estilização dos itens do carrinho */
+      .cart-item {
+        list-style: none;
+        margin: 0;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+      }
+  
+      /* Estilização do botão de limpar carrinho */
+      #limpar-btn {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 4px;
+        background-color: #dc3545;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+      }
+  
+      /* Estilização do botão de limpar carrinho quando passa o mouse por cima */
+      #limpar-btn:hover {
+        background-color: #c82333;
+      }
+  
+      /* Estilização do ícone do carrinho com o menu aberto */
+      #carrinho.open + .cart-icon {
+        right: 320px; /* Move o ícone para a direita do menu aberto */
+        transform: translateX(-250px); /* Move o ícone do carrinho para a esquerda */
+      }
+
+
+      #itens-carrinho {
+        list-style: none;
+        padding: 0;
+      }
+      
+      #itens-carrinho li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+      
+      #itens-carrinho li img {
+        max-width: 50px;
+        max-height: 50px;
+        margin-right: 10px;
+      }
+      
+      #itens-carrinho li span {
+        font-weight: bold;
+      }

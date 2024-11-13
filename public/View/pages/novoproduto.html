@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Pedidos</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"></link>
+    <link rel="stylesheet" type="text/css" href="../assets/css/estilo.css">
+
+    <script type="module" src="../../model/novoproduto.js"></script>
+
+  </head>
+  <body class="quemSomos">
+    <div class="row estiloBaclgroundOpacidade">
+      <div class="centalizar col-md-4">
+        <a href="../../index.html"><img src="../assets/img/logo.png"></a>
+      </div>
+    
+    
+      <div class="centalizar col-md-4">
+        <div>
+          <nav class="navbar navbar-expand-lg navbar-light "> 
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav meio">
+                <li class="nav-item active">
+                  <a class="nav-link menuLink estiloCordegrade" href="./catalogo.html">Ver Catalogo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menuLink estiloCordegrade" href="./pedidos.html">Ver Lita de pedidos</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    
+    
+    
+      <div class="centalizar col-md-4 menu">
+            
+        </div>
+    
+    
+    
+    </div>
+    </header>
+  <!-- End header section -->
+ 
+  <!-- Start Restaurant Menu -->
+  <main class="">
+    <section id="mu-restaurant-menu ">
+      <div class="container meio">
+        <div class="row">
+          <div class="col-md-12 p-4 ">
+            <div class="mu-restaurant-menu-area rounded estiloBaclgroundOpacidade p-4">
+  
+              <div class="mu-title">
+                <span class="mu-subtitle tituloDestaque estiloCordegrade ">Cadastre</span>
+                <h2></h2>
+                <h2 class="tituloDestaque estiloCordegrade ">um produto</h2>
+              </div>
+  
+              <div class="mu-contact-content">
+                <div class="row">
+                  <div class="col-md-4"></div>
+  
+                  <div class="col-md-4">
+                    <div class="mu-contact-left">
+                      <div id="form-messages"></div>
+                      
+                      <form  class="mu-contact-form ">
+                        <div class="form-group">
+                          <label for="name" class="estiloCordegrade">Nome</label>
+                          <input type="text" class="form-control" id="nome"  placeholder="Nome" required>
+                          <h4></h4>
+                        </div>
+                        <div class="form-group">
+                          <label for="Valor" class="estiloCordegrade" >Valor</label>
+                          <input type="Valor" class="form-control" id="valor"  placeholder="Valor" required>
+                        </div>    
+  
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1" class="estiloCordegrade" >Descrição</label>
+                          <br>
+                          <textarea id="descricao" rows="3" cols="40"></textarea>
+                        </div>
+  
+                        <div class="form-group">
+                          <div class="mb-3">
+                            <label for="formFile" class="form-label estiloCordegrade" >Imagem do produto</label>                          
+                            <input type="file" class="form-control"  id="file-input" name="arquivo">
+                            <br>
+                            <button type="button" class="mu-send-btn estiloBotao" id="upload-button">Salvar</button>
+                          </div>
+                        </div>
+  
+                      </form>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- End Contact section -->
+</main>
+  <!-- Start Footer -->
+  <footer id="mu-footer " class="estiloBaclgroundOpacidade">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        <div class="mu-footer-area">
+          <div class="mu-footer-copyright">
+            <p class="text-center" style="color:#c0c0c0"> Desenvolvido por Carlos Eduardo Matte</p>
+            <p class="text-center" style="color:#c0c0c0">&copy; CNPJ: 99.999.999/9999-99 © Todos os direitos reservados. 2023</p>
+          </div>         
+        </div>
+      </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../assets/js/pedido.js"></script>
+</body>
+</html>

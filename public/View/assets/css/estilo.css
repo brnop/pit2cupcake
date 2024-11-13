@@ -1,0 +1,404 @@
+
+
+/*formulario */
+
+li{
+  list-style-type: none;
+}
+
+a{
+  color: #000;
+}
+
+a:hover{
+  color: #00000095;
+  text-decoration:none;
+}
+
+textarea{
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+
+.estiloBaclground{
+  background: #F4F2F3;
+}
+
+.estiloBaclgroundOpacidade{
+  background: #0000004f!important;
+}
+
+.tituloDestaque{
+    margin: 2em 0em;
+    text-align: center;
+    font-size: 35px;
+    color: #D82D7E;
+    font-weight: 800;
+}
+
+.corDeFundoPradao{
+    background-color: #D82D7E;
+    color: #fff;
+}
+
+.corDeFundoPradao:hover{
+    background: #d82d7dc2;
+    color: #fff;
+}
+
+.centalizar{
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+
+.meio{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+body{
+  overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
+  width: 100%; /* Garante que o conteúdo se ajuste ao viewport */
+}
+
+/*barra de pesquisa */
+
+.barra-pesquisa{
+    border-radius: 20px;
+    padding: 7px 2px 7px 12px;
+    border: 1px solid #33333338;
+    width: 24em!important;
+    text-align: center;
+}
+
+ /*menu header*/
+ .menu{
+    list-style:none;
+    float:left;
+  }
+
+  .menu li a{
+    color: #8e44ad!important;
+    text-shadow:0px 0px 5px #fff;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+  
+  .menu li a:hover{
+    background-color: #8e44ad;
+    background-image: linear-gradient(to bottom right, #8e44ad, #c39bd3);
+    color: #fff!important;;
+    text-shadow:0px 0px 5px #fff;
+    border-radius: 5px;
+  }
+  
+  .menu li  ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color:#fff;
+    display:none;
+  }
+  
+  .menu li:hover ul, .menu li.over ul{display:block;}
+  
+  .menu li ul li{
+    border:1px solid #EBEBEB;
+    display:block;
+    width:150px;
+  }
+  
+  .menu{ 
+    margin: auto;
+    border: none;
+  }
+
+/* barra de pesquisa */
+
+.FiltroProdutos{
+    padding: 30px;
+    background: #F4F2F3;
+}
+
+
+.BotaoBuscar{
+    background: #D82D7E;
+    border-radius: 30px;
+    width: 160px;
+    height: 38px;
+    border: none;
+}
+
+  /* quem somos */
+
+  .corBackgroundOpacidade{
+    align-items: center;
+    padding: 2em 10em;
+  }
+
+  .espacoLaterais{
+    padding: 5em 12em;
+  }
+  
+  .quemSomos{
+    background-image: url('../img/fundo.png');
+    background-size: cover;
+  }
+  
+  .textoQuemSomos, .tituloQuemSomos{
+    color: #fff;
+    padding-bottom: 1em;
+  }
+  
+  .fotoDestaqueQuemSomos {
+    text-align: center;
+  }
+  
+
+/* Ajuste de estilo para os produtos */
+.product-card {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 50px 0px;
+  background: #ebebeb;
+}
+
+.product-card h4{
+  margin-top: 1em;
+}
+
+.caixaCarousel{
+    padding: 1em 16em;
+    height: 100%;
+}
+
+.product-card h5{
+    margin: 25px 0px;
+    font-size: 14px!important;
+}
+
+.product-card p{
+    font-size: 25px!important;
+    margin: 25px 0px;
+}
+
+.product-img {
+  max-width: 100%;
+  height: auto;
+  width: 230px!important;
+  height: 220px!important;
+}
+
+/* cometarios */
+
+.cometario-card {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    border-radius: 30px;
+    padding: 50px 0px;
+  }
+  
+
+  /* formulario */
+
+.mu-title {
+    text-align: center;
+    margin: 2em;
+}
+
+.mu-title .tituloDestaque{
+    margin: 0px;
+}
+
+.mu-contact-area{
+    margin: 2em;
+}
+
+input{
+    border-radius: 10px!important;
+}
+
+#mu-contact{
+    background-image: url('../img/fundo.png') ;
+    background-repeat: repeat;
+    color: #EBEBEB;
+}
+
+  /* rodape */
+
+  footer{
+    padding: 2em 12em;
+    background: #F4F2F3;
+}
+
+iframe{
+    width: 64%;
+    height: 156px;
+}
+
+
+/* pagina login */
+
+.estiloLogin{
+    background: #00000036;
+    padding: 2em;
+    color: #EBEBEB;
+    border-radius: 23px;
+}
+
+
+/* pagina pedidos */
+
+.pesquisaTabelaProduto{
+  border-radius: 0px 10px 10px 0px!important;
+  height: 38px;
+}
+
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Esconde o menu inicialmente */
+  width: 250px;
+  height: 100%;
+  background: #333;
+  transition: all 0.3s ease;
+}
+#sidebar.active {
+  left: 0; /* Mostra o menu quando estiver ativo */
+}
+#dismiss {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto;
+  border: 1px solid #EBEBEB;
+  min-height: 55vh;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #EBEBEB;
+  color: #EBEBEB;
+}
+th {
+  background-color: #8e44ad; /* Roxo escuro */
+  background-image: linear-gradient(to bottom right, #8e44ad, #c39bd3); /* Degradê de roxo */
+  color: #EBEBEB;
+}
+
+.tituloPedidos{
+  margin-bottom: 1em;
+  color: #EBEBEB;
+}
+
+.menuLink{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.estiloCordegrade {
+  background: linear-gradient(to bottom right, #8e44ad, #c39bd3);
+  -webkit-background-clip: text; /* Safari */
+  -webkit-text-fill-color: transparent; /* Safari */
+  background-clip: text;
+  color: transparent;
+}
+
+.menuLink:hover{
+  background: linear-gradient(to bottom right, #8e44adcf, #c39bd380);
+  -webkit-background-clip: text; /* Safari */
+  -webkit-text-fill-color: transparent; /* Safari */
+  background-clip: text;
+  color: transparent;
+}
+
+
+/* adicionar um novo produto*/
+
+section#mu-restaurant-menu {
+  margin: 1em 0em;
+}
+
+.mu-contact-form, .form-group{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+input#file-input {
+  padding: 3px;
+}
+
+.estiloBotao, .estiloPardao{
+  background-color: #8e44ad; /* Roxo escuro */
+  background-image: linear-gradient(to bottom right, #8e44ad, #c39bd3); /* Degradê de roxo */
+  color: #ebebeb;
+  padding: 5px 15px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.estiloBotao:hover, .estiloHover:hover{
+  background-color: #8e44ad00;
+  background-image: linear-gradient(to bottom right, #8e44add6, #c39bd3b3);
+  color: #ebebeb;
+}
+
+/* catalago */
+
+#catalogo .card{
+  text-align: center;
+  align-items: center;
+  padding: 1em;
+  color: #EBEBEB;
+  background: #0000004f;
+  margin-bottom: 1em;
+  min-height: 460px;
+}
+
+#catalogo img{
+  width: 56%;
+  max-height: 144px;
+}
+
+.tituloProduto{
+  margin-top: 1em;
+  font-size: 20px;
+  min-height: 80px;
+}
+
+
+
+.mensagem {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 5px;
+  display: none;
+  z-index: 9999;
+}
